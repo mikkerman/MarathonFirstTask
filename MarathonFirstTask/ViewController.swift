@@ -31,7 +31,8 @@ class ViewController: UIViewController {
         gradientLayer.colors = [UIColor.systemPink.cgColor, UIColor.systemYellow.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
-
+        gradientLayer.cornerRadius = 10
+        
         gradientView.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
